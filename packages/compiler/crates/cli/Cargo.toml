@@ -1,0 +1,39 @@
+[package]
+name = "diamond-cli"
+version = "0.0.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Command-line interface for the Diamond language compiler"
+rust-version = "1.74"
+
+[package.metadata]
+documentation = "https://github.com/diamond-language/diamond_code"
+repository = "https://github.com/diamond-language/diamond_code"
+keywords = ["diamond", "compiler", "cli"]
+
+[[bin]]
+name = "diamondc"
+path = "src/main.rs"
+
+[features]
+default = ["wasm-components"]
+wasm-components = ["diamond-backend/wasm-components"]
+serde = ["diamond-frontend/serde", "diamond-backend/serde", "dep:serde", "dep:serde_json"]
+
+[dependencies]
+anyhow = { workspace = true }
+clap = { workspace = true, features = ["derive", "env"] }
+diamond-frontend = { path = "../frontend" }
+diamond-backend = { path = "../backend" }
+diamond-hir = { path = "../hir" }
+serde = { workspace = true, optional = true }
+serde_json = { workspace = true, optional = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+
+[dev-dependencies]
+expect-test = { workspace = true }
+insta = { workspace = true }
+pretty_assertions = { workspace = true }
+serde_yaml = { workspace = true }
+tempfile = { workspace = true }
