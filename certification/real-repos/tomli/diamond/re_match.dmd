@@ -1,0 +1,2 @@
+mtl(m:O)>O=dttm(I(mgrp(m,0)),I(mgrp(m,1)),(mgrp(m,2)==none?0:I(mgrp(m,2))),(mgrp(m,3)==none?0:I(pad6(mgrp(m,3)))))
+mtd(m:O)>O=(mgrp(m,3)==none?dtd(I(mgrp(m,0)),I(mgrp(m,1)),I(mgrp(m,2))):dtt(I(mgrp(m,0)),I(mgrp(m,1)),I(mgrp(m,2)),I(mgrp(m,3)),I(mgrp(m,4)),(mgrp(m,5)==none?0:I(mgrp(m,5))),(mgrp(m,6)==none?0:I(pad6(mgrp(m,6)))),(mgrp(m,8)!=none?tzo(mgrp(m,9),mgrp(m,10),mgrp(m,8)):(mgrp(m,7)!=none?tzutc():none))))

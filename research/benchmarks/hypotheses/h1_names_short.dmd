@@ -1,0 +1,6 @@
+fn p(v:i)->i{
+  let n=v
+  let d=n*2
+  let t=n*3
+  ret d+t
+}

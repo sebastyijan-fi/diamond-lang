@@ -1,0 +1,6 @@
+fn handle(m:s,p:s)->{c:i,b:map}{
+  if m!="GET"{ret {c:405,b:{error:"method not allowed"}}}
+  if p=="/users"{ret {c:200,b:{users:["u1","u2"]}}}
+  if p=="/health"{ret {c:200,b:{status:"ok"}}}
+  ret {c:404,b:{error:"not found"}}
+}

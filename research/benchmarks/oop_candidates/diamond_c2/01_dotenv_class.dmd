@@ -1,0 +1,9 @@
+// Candidate 2: Lisp/Closure-like Factories
+// No explicit class definition, just a factory function returning a map of closures.
+DotEnv(p:S,v:B,e:S)>{
+    d:M;
+    {
+        set_as_environment_variables:()>B=d?{d#k,v:k!in(os.env)?(v!none?os.env=os.env+{k:v}):_}:f,
+        _get_stream:()=try(open(p,e),e:v?print("File not found: "+p):none)
+    }
+}

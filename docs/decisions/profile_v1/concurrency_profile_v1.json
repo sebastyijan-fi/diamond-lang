@@ -1,0 +1,31 @@
+{
+  "language": "diamond",
+  "profile_version": "v1",
+  "status": "stable",
+  "concurrency": {
+    "semantic_domain": "single_thread",
+    "async_support": "none",
+    "memory_ordering": "none",
+    "cancellation": "none",
+    "structured_concurrency": false
+  },
+  "enforcement": {
+    "grammar_ref": "src/transpiler/grammar.py",
+    "semantic_contract_ref": "docs/decisions/profile_v1/SEMANTIC_CONTRACTS.md",
+    "object_contract_ref": "docs/decisions/profile_v1/OBJECT_SEMANTICS_V1.md",
+    "banned_tokens": [
+      "async",
+      "await",
+      "yield",
+      "thread",
+      "mutex",
+      "atomic",
+      "channel",
+      "spawn",
+      "future",
+      "promise",
+      "cancel",
+      "taskgroup"
+    ]
+  }
+}

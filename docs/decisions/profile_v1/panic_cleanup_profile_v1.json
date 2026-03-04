@@ -1,0 +1,23 @@
+{
+  "language": "diamond",
+  "profile_version": "v1",
+  "status": "stable",
+  "panic_cleanup": {
+    "panic_mode": "exception_channel",
+    "cleanup_model": "try_catch_handler",
+    "reraise_sentinel": "RERAISE"
+  },
+  "runtime_refs": {
+    "python_runtime": "src/transpiler/runtime/diamond_runtime.py",
+    "semantic_contract": "docs/decisions/profile_v1/SEMANTIC_CONTRACTS.md"
+  },
+  "conformance": {
+    "cases_file": "src/conformance/cases/runtime_v0_core.json",
+    "required_case_ids": [
+      "try_catch.handle",
+      "try_catch.reraise",
+      "try_catch.over.propagate",
+      "propagate.error"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+program        = { decl, NEWLINE } ;
+
+decl           = IDENT, [ tool_header ], "(", [ param, { ",", param } ], ")", ">", type, "=", expr ;
+tool_header    = "^", "(", IDENT, { ",", IDENT }, ")" ;
+param          = IDENT, ":", type ;
+
+type           = IDENT | "[", type, "]" | "{", [ type_field, { ",", type_field } ], "}" ;
+type_field     = IDENT, ":", type ;
+
+expr           = cond_expr ;
+cond_expr      = match_expr, [ "?", expr, ":", expr ] ;
+match_expr     = or_expr, { "~", pattern, ":", expr } ;
+pattern        = "_" | literal | IDENT ;
+
+or_expr        = and_expr, { "|", and_expr } ;
+and_expr       = cmp_expr, { "&", cmp_expr } ;
+cmp_expr       = add_expr, { ("==" | "!=" | "<" | "<=" | ">" | ">="), add_expr } ;
+add_expr       = mul_expr, { ("+" | "-" | "$"), mul_expr } ;
+mul_expr       = pow_expr, { ("*" | "/" | "%"), pow_expr } ;
+pow_expr       = map_expr, { "^", map_expr } ;
+
+map_expr       = range_expr, [ "#", IDENT, ":", expr ] ;
+range_expr     = unary_expr, [ "..", unary_expr ] ;
+
+unary_expr     = [ "-" ], postfix_expr ;
+postfix_expr   = primary, { post_op } ;
+post_op        = call_op | member_op | index_op | patch_op ;
+
+call_op        = "(", [ expr, { ",", expr } ], ")" ;
+member_op      = ".", IDENT ;
+index_op       = "[", slice_or_index, "]" ;
+patch_op       = "{", [ map_item, { ",", map_item } ], "}" ;
+slice_or_index = expr | [ expr ], ":", [ expr ] ;
+
+primary        = IDENT | literal | "(", expr, ")" ;
+literal        = NUMBER | STRING | "t" | "f" | list_lit | map_lit ;
+list_lit       = "[", [ expr, { ",", expr } ], "]" ;
+map_lit        = "{", [ map_item, { ",", map_item } ], "}" ;
+map_item       = IDENT, ":", expr | STRING, ":", expr ;
+
+IDENT          = letter, { letter | digit | "_" } ;
+NUMBER         = digit, { digit }, [ ".", digit, { digit } ] ;
+STRING         = '"', { character - '"' }, '"' ;
+
+letter         = "A" | ... | "Z" | "a" | ... | "z" ;
+digit          = "0" | ... | "9" ;
+NEWLINE        = "\n" ;

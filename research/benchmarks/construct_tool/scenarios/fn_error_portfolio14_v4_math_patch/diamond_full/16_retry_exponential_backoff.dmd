@@ -1,0 +1,2 @@
+rt^(c,t,b)(ok:[B],b:I,m:I)>M=lp(ok,b,m,0,[])?
+lp(ok:[B],b:I,m:I,a:I,w:[I])>M=a<=m?(a<ln(ok)&ok[a]?{ok:t,tries:a+1,wait:w}:a==m?{ok:f,tries:a+1,wait:w}:lp(ok,b,m,a+1,w+[b*(2^a)])):{ok:f,tries:m+1,wait:w}

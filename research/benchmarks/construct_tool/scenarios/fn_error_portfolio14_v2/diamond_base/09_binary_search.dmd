@@ -1,0 +1,3 @@
+bs(a:[I],x:I)>I=go(a,x,0,ln(a)-1)
+go(a:[I],x:I,l:I,r:I)>I=l>r?-1:ck(a,x,l,r,(l+r)/2)
+ck(a:[I],x:I,l:I,r:I,m:I)>I=a[m]==x?m:a[m]<x?go(a,x,m+1,r):go(a,x,l,m-1)

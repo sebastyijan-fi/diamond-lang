@@ -1,0 +1,26 @@
+{
+  "language": "diamond",
+  "profile_version": "v1",
+  "status": "stable",
+  "deprecations": [
+    {
+      "id": "class_sigil_section",
+      "since": "v1",
+      "severity": "error",
+      "replacement": "$",
+      "autofix": true
+    },
+    {
+      "id": "explicit_self_receiver",
+      "since": "v1",
+      "severity": "error",
+      "replacement": "implicit receiver with # binder",
+      "autofix": true
+    }
+  ],
+  "migration": {
+    "tool": "scripts/evolution/migrate_to_v1.py",
+    "min_python_version": "3.10",
+    "idempotent": true
+  }
+}

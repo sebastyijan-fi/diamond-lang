@@ -1,0 +1,12 @@
+// Candidate 3: Contextual Map-bound operations
+// Methods are just functions that take an implicit `self` (using `#` context binder)
+DotEnv(p:S,v:B,e:S)>{
+    _d:M,
+    p:p,
+    v:v,
+    e:e
+}
+
+DotEnv::set_as_environment_variables()>B=#._d?{#._d#k,v:k!in(os.env)?(v!none?os.env=os.env+{k:v}):_}:f
+
+DotEnv::_get_stream()=try(open(#.p,#.e),e:v?print("File not found: "+#.p):none)

@@ -1,0 +1,26 @@
+{
+  "profile": "qwen3_object_surface_v1",
+  "tokenizer": "Qwen/Qwen3-8B",
+  "mappings": {
+    "class_sigil": "$",
+    "self_binder": "self"
+  },
+  "mappings_unique": {
+    "self_binder": "self",
+    "class_sigil": "$"
+  },
+  "method": {
+    "ranking": "combined_score = isolation_tokens + context_avg",
+    "contexts_per_operator": 3,
+    "candidates_per_operator": 10,
+    "unique_assignment": {
+      "enabled": true,
+      "objective": "greedy minimize combined_score with distinct candidates across operators",
+      "total_score": 27.0,
+      "selection_order": [
+        "self_binder",
+        "class_sigil"
+      ]
+    }
+  }
+}

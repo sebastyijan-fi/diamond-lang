@@ -1,0 +1,31 @@
+{
+  "language": "diamond",
+  "profile_version": "v1",
+  "status": "stable",
+  "scope": {
+    "metaprogramming": "none",
+    "reflection_codegen": "none",
+    "effect_system": "none",
+    "inheritance_traits": "none",
+    "ide_debug_profiler": "none"
+  },
+  "enforcement": {
+    "grammar_ref": "src/transpiler/grammar.py",
+    "semantic_contract_ref": "docs/decisions/profile_v1/SEMANTIC_CONTRACTS.md",
+    "object_contract_ref": "docs/decisions/profile_v1/OBJECT_SEMANTICS_V1.md",
+    "tooling_policy_ref": "docs/decisions/profile_v1/TOOLING_SCOPE_POLICY_V1.md",
+    "banned_tokens": [
+      "macro",
+      "comptime",
+      "reflect",
+      "derive",
+      "annotation",
+      "effect",
+      "handler",
+      "extends",
+      "implements",
+      "trait",
+      "interface"
+    ]
+  }
+}

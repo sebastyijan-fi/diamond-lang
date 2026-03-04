@@ -1,0 +1,84 @@
+{
+  "record_type": "probe_repo_report",
+  "ts_utc": "2026-03-03T20:44:50Z",
+  "run_id": "run_20260303T204450Z_probe_click_probe",
+  "repo_url": "https://github.com/pallets/click.git",
+  "repo_name": "click_probe",
+  "commit": "cdab890",
+  "license": "unknown",
+  "tests": {
+    "attempted": true,
+    "exit_code": 1,
+    "summary": "2 failed, 1318 passed, 21 skipped, 1 xfailed in 1.61s",
+    "output_tail": "                default=\"Default\",\n            )\n        elif flag_type is int:\n            flagopt = click.option(\n                \"--theflag\", type=int, is_flag=False, flag_value=1, default=0\n            )\n        else:\n            raise NotImplementedError(flag_type)\n    \n        @click.command()\n        @flagopt\n        def cmd(theflag):\n            click.echo(theflag)\n    \n        runner = CliRunner()\n        result = runner.invoke(cmd, args)\n>       assert result.exit_code == 0\nE       assert 2 == 0\nE        +  where 2 = <Result SystemExit(2)>.exit_code\n\ntests/test_options.py:2320: AssertionError\n=========================== short test summary info ============================\nFAILED tests/test_options.py::test_flag_value_on_option_with_zero_or_one_args[str-args1-FlagValue\\n]\nFAILED tests/test_options.py::test_flag_value_on_option_with_zero_or_one_args[int-args4-1\\n]\n2 failed, 1318 passed, 21 skipped, 1 xfailed in 1.61s"
+  },
+  "features": {
+    "file_count": 31,
+    "class_def": 78,
+    "func_def": 612,
+    "async_func_def": 0,
+    "decorator_use": 206,
+    "with_stmt": 32,
+    "async_with_stmt": 0,
+    "for_stmt": 83,
+    "while_stmt": 18,
+    "try_stmt": 91,
+    "raise_stmt": 103,
+    "yield_expr": 32,
+    "lambda_expr": 6,
+    "list_comp": 18,
+    "set_comp": 0,
+    "dict_comp": 4,
+    "gen_exp": 24,
+    "match_stmt": 0,
+    "named_expr": 0,
+    "max_function_nesting": 3
+  },
+  "gaps": {
+    "friction_score": 1658,
+    "signals": [
+      {
+        "name": "decorators",
+        "severity": "high",
+        "count": 206,
+        "note": "Decorator-heavy APIs need first-class lowering profile."
+      },
+      {
+        "name": "exception_flow",
+        "severity": "medium",
+        "count": 194,
+        "note": "Exception paths are supported but high-volume stress target."
+      },
+      {
+        "name": "loop_statements",
+        "severity": "medium",
+        "count": 101,
+        "note": "Statement loops may need compact canonical form."
+      },
+      {
+        "name": "class_model",
+        "severity": "high",
+        "count": 78,
+        "note": "Direct class syntax/object semantics gap for full ports."
+      },
+      {
+        "name": "generator_model",
+        "severity": "high",
+        "count": 56,
+        "note": "yield/generator semantics need core design."
+      },
+      {
+        "name": "context_managers",
+        "severity": "medium",
+        "count": 32,
+        "note": "with/async with requires effect-boundary model."
+      },
+      {
+        "name": "comprehensions",
+        "severity": "low",
+        "count": 22,
+        "note": "Could be lowered via map/fold; assess token tradeoff."
+      }
+    ]
+  }
+}

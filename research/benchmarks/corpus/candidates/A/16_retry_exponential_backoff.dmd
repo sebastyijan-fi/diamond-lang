@@ -1,0 +1,11 @@
+fn retry(ok:[b],base:i,max:i)->{ok:b,tries:i,wait:[i]}{
+  var wait=[]
+  var a=0
+  while a<=max{
+    if a<len(ok)&&ok[a]{ret {ok:true,tries:a+1,wait:wait}}
+    if a==max{ret {ok:false,tries:a+1,wait:wait}}
+    wait.push(base*(2^a))
+    a=a+1
+  }
+  ret {ok:false,tries:max+1,wait:wait}
+}

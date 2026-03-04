@@ -1,0 +1,5 @@
+@handle(r:Req)->Res{
+  ?r.m=="GET"{
+    |r.p|"/users"->J(200,users())"/health"->J(200,{s:"ok"})_->J(404,{e:"nf"})|
+  }!{J(405,{e:"mna"})}
+}

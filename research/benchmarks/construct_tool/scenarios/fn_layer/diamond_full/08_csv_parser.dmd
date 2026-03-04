@@ -1,0 +1,1 @@
+csv^(c,t,b)(x:S)>[[S]]=split(trim(x),"\n")#l:split(l,",")

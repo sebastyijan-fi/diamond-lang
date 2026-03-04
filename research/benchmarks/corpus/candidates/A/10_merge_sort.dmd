@@ -1,0 +1,16 @@
+fn mg(a:[i],b:[i])->[i]{
+  var o=[]
+  var i=0
+  var j=0
+  while i<len(a)&&j<len(b){
+    if a[i]<=b[j]{o.push(a[i]);i=i+1}
+    else{o.push(b[j]);j=j+1}
+  }
+  ret o+a[i:]+b[j:]
+}
+
+fn ms(x:[i])->[i]{
+  if len(x)<2{ret x}
+  let m=len(x)/2
+  ret mg(ms(x[:m]),ms(x[m:]))
+}

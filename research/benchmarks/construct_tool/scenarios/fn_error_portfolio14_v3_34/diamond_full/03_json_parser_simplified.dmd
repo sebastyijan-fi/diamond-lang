@@ -1,0 +1,2 @@
+jp^(c,t,b)(x:S)>M=prs(x)?
+prs^(c,t,b)(x:S)>M={ok:t,v:x}

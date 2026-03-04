@@ -1,0 +1,12 @@
+{
+  "class_sigil": [
+    "{tok}Point(x:I,y:I){{\"tag\":\"p\"}}",
+    "{tok}Env(p:S){{\"path\":p,\"val\":1}}",
+    "{tok}Cfg(n:I){{\"n\":n,\"m\":n+1}}"
+  ],
+  "self_binder": [
+    ".Point.len(self:O)>I={tok}.x",
+    ".Point.sum(self:O)>I={tok}.a+{tok}.b",
+    ".P.bump(self:O,d:I)>I={tok}.n+d"
+  ]
+}

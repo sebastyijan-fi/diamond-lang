@@ -1,0 +1,1 @@
+mtn(m:O,pf:O)>O=(mgrp(m,"floatpart")?pf(mgrp(m,none)):ibase(mgrp(m,none),0))

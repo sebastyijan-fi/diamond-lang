@@ -1,0 +1,1 @@
+st^(c,t,b)(ops:[O])>[I]=fold(ops,{s:[],o:[]},x,t,t.k=="push"?{s:x.s+[t.v],o:x.o}:t.k=="pop"&ln(x.s)>0?{s:x.s[:-1],o:x.o+[x.s[-1]]}:x)?.o

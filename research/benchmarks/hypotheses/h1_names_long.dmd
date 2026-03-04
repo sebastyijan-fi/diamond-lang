@@ -1,0 +1,6 @@
+fn process(request_value:i)->i{
+  let request_number=request_value
+  let request_double=request_number*2
+  let request_triple=request_number*3
+  ret request_double+request_triple
+}

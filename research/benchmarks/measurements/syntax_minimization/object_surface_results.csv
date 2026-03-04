@@ -1,0 +1,5 @@
+operator,candidate,isolation_tokens,context_avg,context_min,context_max,combined_score
+class_sigil,$,1,14.0000,12,16,15.0000
+class_sigil,§,1,14.0000,12,16,15.0000
+self_binder,self,1,11.0000,9,13,12.0000
+self_binder,#,1,12.3333,10,14,13.3333

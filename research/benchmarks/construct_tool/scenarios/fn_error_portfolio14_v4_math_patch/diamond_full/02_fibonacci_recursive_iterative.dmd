@@ -1,0 +1,4 @@
+fr^(c,t,b)(n:I)>I=n<2?n:fr(n-1)?+fr(n-2)?
+fi(n:I)>I=lp(n,0,1)?
+lp(n:I,a:I,b:I)>I=n==0?a:lp(n-1,b,a+b)?
+fb(n:I)>[I]=[fr(n)?,fi(n)?]

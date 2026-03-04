@@ -1,0 +1,41 @@
+mod app.order_api
+
+use std.http
+use std.json
+
+Item := {name:s, qty:i, cents:i}
+OrderReq := {user_id:s, items:[Item]}
+OrderOut := {user_id:s, item_count:i, total_cents:i}
+ApiErr := {status:i, msg:s}
+
+calc_total := fn(items:[Item])->i {
+  total := 0
+  for it in items {
+    total = total + (it.cents * it.qty)
+  }
+  -> total
+}
+
+handle := fn(req:http.Req)->http.Res!ApiErr {
+  req.path <> {
+    "/orders/total" -> {}
+    _ -> { -> err {status:404, msg:"not_found"} }
+  }
+
+  if req.method != "POST" {
+    -> err {status:405, msg:"method_not_allowed"}
+  }
+
+  body:OrderReq := json.decode(req.body)?
+  if len(body.items) == 0 {
+    -> err {status:400, msg:"items_empty"}
+  }
+
+  out:OrderOut := {
+    user_id: body.user_id,
+    item_count: len(body.items),
+    total_cents: calc_total(body.items),
+  }
+
+  -> ok http.json(200, out)
+}

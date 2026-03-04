@@ -1,0 +1,1 @@
+ev^(c,t,b)(ops:[O])>[S]=fold(ops,{h:{},o:[]},x,t,t.k=="on"?x{h:put(x.h,t.e,get(x.h,t.e,[])+[t.v])}:t.k=="emit"?x{o:x.o+get(x.h,t.e,[])}:x)?.o

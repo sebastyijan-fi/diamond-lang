@@ -1,0 +1,1 @@
+kv:[O]>[S]=x@{m:{},o:[]}#(t.k~"set"?m[t.a]=t.v:t.k~"get"?o+G(m,t.a,""):t.k~"del"?D(m,t.a):0)>o

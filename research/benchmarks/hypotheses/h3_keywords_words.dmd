@@ -1,0 +1,4 @@
+function classify(number:int)->string{
+  if number==0{return "zero"}
+  else{return "nonzero"}
+}

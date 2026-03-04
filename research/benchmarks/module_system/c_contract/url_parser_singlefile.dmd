@@ -1,0 +1,18 @@
+types_trim_slash(s:S)>S=ln(s)>0&s[ln(s)-1]=="/"?s[:ln(s)-1]:s
+types_is_abs(s:S)>B=ln(s)>0&s[0]=="/"
+types_as_i(s:S)>I=I(s)
+
+scanner_norm_path(p:S)>S=types_trim_slash(trim(p))
+scanner_abs_path(p:S)>B=types_is_abs(p)
+scanner_segs(p:S)>[S]=split(scanner_norm_path(p),"/")
+scanner_first(p:S)>S=ln(scanner_segs(p))==0?"":scanner_segs(p)[0]
+scanner_last(p:S)>S=ln(scanner_segs(p))==0?"":scanner_segs(p)[ln(scanner_segs(p))-1]
+scanner_seg_count(p:S)>I=types_as_i(S(ln(scanner_segs(p))))
+
+parser_parse(p:S)>O={
+  abs:scanner_abs_path(p),
+  n:ln(scanner_segs(p)),
+  h:scanner_first(p),
+  t:scanner_last(p),
+  i:scanner_seg_count(p)
+}

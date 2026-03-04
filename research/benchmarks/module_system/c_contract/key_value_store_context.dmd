@@ -1,0 +1,9 @@
+//@storage exposes empty()>O,put(st:O,k:S,v:S)>O,delk(st:O,k:S)>O,getk(st:O,k:S)>S
+//@serializer exposes pack(st:O)>S,unpack(raw:S)>O,key(k:S)>S
+
+@api{
+  set(st:O,k:S,v:S)>O=storage.put(st,serializer.key(k),v)
+  drop(st:O,k:S)>O=storage.delk(st,serializer.key(k))
+  fetch(st:O,k:S)>S=storage.getk(st,serializer.key(k))
+  round(st:O)>O=serializer.unpack(serializer.pack(st))
+}

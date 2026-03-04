@@ -1,0 +1,84 @@
+{
+  "record_type": "probe_repo_report",
+  "ts_utc": "2026-03-03T20:44:47Z",
+  "run_id": "run_20260303T204447Z_probe_tomli_probe",
+  "repo_url": "https://github.com/hukkin/tomli.git",
+  "repo_name": "tomli_probe",
+  "commit": "c20c491",
+  "license": "MIT",
+  "tests": {
+    "attempted": true,
+    "exit_code": 0,
+    "summary": "16 passed, 744 subtests passed in 0.17s",
+    "output_tail": "................                                 [100%]\n16 passed, 744 subtests passed in 0.17s"
+  },
+  "features": {
+    "file_count": 9,
+    "class_def": 5,
+    "func_def": 47,
+    "async_func_def": 0,
+    "decorator_use": 1,
+    "with_stmt": 1,
+    "async_with_stmt": 0,
+    "for_stmt": 8,
+    "while_stmt": 9,
+    "try_stmt": 22,
+    "raise_stmt": 38,
+    "yield_expr": 0,
+    "lambda_expr": 5,
+    "list_comp": 1,
+    "set_comp": 0,
+    "dict_comp": 0,
+    "gen_exp": 2,
+    "match_stmt": 0,
+    "named_expr": 0,
+    "max_function_nesting": 2
+  },
+  "gaps": {
+    "friction_score": 131,
+    "signals": [
+      {
+        "name": "exception_flow",
+        "severity": "medium",
+        "count": 60,
+        "note": "Exception paths are supported but high-volume stress target."
+      },
+      {
+        "name": "loop_statements",
+        "severity": "medium",
+        "count": 17,
+        "note": "Statement loops may need compact canonical form."
+      },
+      {
+        "name": "class_model",
+        "severity": "high",
+        "count": 5,
+        "note": "Direct class syntax/object semantics gap for full ports."
+      },
+      {
+        "name": "generator_model",
+        "severity": "high",
+        "count": 2,
+        "note": "yield/generator semantics need core design."
+      },
+      {
+        "name": "comprehensions",
+        "severity": "low",
+        "count": 1,
+        "note": "Could be lowered via map/fold; assess token tradeoff."
+      },
+      {
+        "name": "context_managers",
+        "severity": "medium",
+        "count": 1,
+        "note": "with/async with requires effect-boundary model."
+      },
+      {
+        "name": "decorators",
+        "severity": "high",
+        "count": 1,
+        "note": "Decorator-heavy APIs need first-class lowering profile."
+      }
+    ]
+  }
+}

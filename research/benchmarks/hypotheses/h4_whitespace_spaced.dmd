@@ -1,0 +1,7 @@
+fn sum(v:[i])->i {
+  var t = 0
+  for x in v {
+    t = t + x
+  }
+  ret t
+}

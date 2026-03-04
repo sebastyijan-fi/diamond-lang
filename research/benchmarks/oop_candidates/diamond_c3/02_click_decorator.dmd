@@ -1,0 +1,13 @@
+Command(n:S,cb:F,h:S)>{
+    n:n,
+    cb:cb,
+    h:h
+}
+
+Command::invoke(ctx)=#.cb!none?ctx.invoke(#.cb,**ctx.params):none
+
+command(n:S,cls:F,**attrs)>F=(f:F)>F=cls(n!none?n:f.name.lower(),f,**attrs)
+
+// Decorator using `|` pipeline binder
+sync_db=()->S=print("Database synced")
+sync_db_cmd=sync_db|command(name:"sync",help:"Sync the database.")

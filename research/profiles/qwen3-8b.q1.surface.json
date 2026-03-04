@@ -1,0 +1,50 @@
+{
+  "profile": "qwen3-8b-q1",
+  "tokenizer": "Qwen/Qwen3-8B",
+  "mappings": {
+    "FN_DEF": "!",
+    "IF": "!",
+    "ELSE": "!",
+    "CASE": "#",
+    "ARROW": "/>",
+    "LET": "$",
+    "LAMBDA": "!",
+    "RESULT_OK": "+",
+    "RESULT_ERR": "!",
+    "PROPAGATE": "%"
+  },
+  "mappings_unique": {
+    "RESULT_OK": "+",
+    "RESULT_ERR": "!",
+    "PROPAGATE": "%",
+    "LET": "$",
+    "LAMBDA": "@",
+    "IF": "?",
+    "FN_DEF": "::",
+    "ELSE": "/",
+    "CASE": "#",
+    "ARROW": "/>"
+  },
+  "method": {
+    "ranking": "combined_score = isolation_tokens + context_avg",
+    "contexts_per_operator": 3,
+    "candidates_per_operator": 10,
+    "unique_assignment": {
+      "enabled": true,
+      "objective": "greedy minimize combined_score with distinct candidates across operators",
+      "total_score": 60.0,
+      "selection_order": [
+        "RESULT_OK",
+        "RESULT_ERR",
+        "PROPAGATE",
+        "LET",
+        "LAMBDA",
+        "IF",
+        "FN_DEF",
+        "ELSE",
+        "CASE",
+        "ARROW"
+      ]
+    }
+  }
+}

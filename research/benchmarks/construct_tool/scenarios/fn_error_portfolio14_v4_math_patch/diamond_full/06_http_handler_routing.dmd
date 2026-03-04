@@ -1,0 +1,1 @@
+h^(c,t,b)(m:S,p:S)>M=m=="GET"?p~"/users":{c:200,b:{u:["u1","u2"]}}~"/health":{c:200,b:{s:"ok"}}~_:{c:404,b:{e:"nf"}}:{c:405,b:{e:"mna"}}

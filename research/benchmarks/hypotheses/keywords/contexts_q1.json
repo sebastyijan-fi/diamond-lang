@@ -1,0 +1,12 @@
+{
+  "FN_DEF": ["{tok} f(x:I)>I=x", " {tok} f(x:I)>I=x", "\\n{tok} f(x:I)>I=x"],
+  "IF": ["{tok} x>0?1:0", " {tok} x>0?1:0", "\\n{tok} x>0?1:0"],
+  "ELSE": ["x?1:{tok} 0", " x?1:{tok} 0", "\\n{tok} 0"],
+  "CASE": ["p~\"a\":1 {tok} \"b\":2", " {tok} \"a\":1", "\\n{tok} \"a\":1"],
+  "ARROW": ["\"a\"{tok}1", "x {tok} y", " {tok} "],
+  "LET": ["{tok} x=1", " {tok} x=1", "\\n{tok} x=1"],
+  "LAMBDA": ["map(v,{tok}(x,x+1))", " {tok}(x,x+1)", "\\n{tok}(x,x+1)"],
+  "RESULT_OK": ["{tok} v", " {tok}(v)", "\\n{tok} v"],
+  "RESULT_ERR": ["{tok} e", " {tok}(e)", "\\n{tok} e"],
+  "PROPAGATE": ["v{tok}", "call(){tok}", " x{tok}"]
+}

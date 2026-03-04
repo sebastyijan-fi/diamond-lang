@@ -1,0 +1,6 @@
+program,python_tokens,python_with_tools,diamond_base,diamond_full,syntax_reduction,tool_overhead,net_reduction,vs_python_with_tools
+07_key_value_store_memory,123,232,86,90,0.300813,0.046512,0.268293,0.612069
+09_binary_search,116,193,92,108,0.206897,0.173913,0.068966,0.440415
+11_stack,95,211,71,75,0.252632,0.056338,0.210526,0.644550
+15_event_emitter,109,223,77,81,0.293578,0.051948,0.256881,0.636771
+TOTAL,443,859,326,354,0.264108,0.085890,0.200903,0.587893

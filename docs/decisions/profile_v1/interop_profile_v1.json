@@ -1,0 +1,26 @@
+{
+  "language": "diamond",
+  "profile_version": "v1",
+  "status": "stable",
+  "c_abi": {
+    "extern_builtin": "extern",
+    "runtime_symbol": "extern_call"
+  },
+  "embedding": {
+    "python_runtime": "src/transpiler/runtime/diamond_runtime.py"
+  },
+  "wasm": {
+    "js_runtime": "src/transpiler/runtime/diamond_runtime.js",
+    "js_backend": "src/transpiler/backends/js_backend.py",
+    "target": "wasm-js-host-v1"
+  },
+  "data_interchange": {
+    "rust_runtime": "src/transpiler/runtime/diamond_runtime.rs",
+    "python_backend": "src/transpiler/backends/python_backend.py",
+    "js_backend": "src/transpiler/backends/js_backend.py",
+    "rust_backend": "src/transpiler/backends/rust_backend.py",
+    "semantic_validator": "src/transpiler/semantic_validate.py",
+    "json_encode_builtin": "jenc",
+    "json_decode_builtin": "jdec"
+  }
+}

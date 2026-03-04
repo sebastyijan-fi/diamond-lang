@@ -1,0 +1,1 @@
+prs(path:S,data:S)>O=out(loop(toks(data),mk(path),s,t:step(s,t)))

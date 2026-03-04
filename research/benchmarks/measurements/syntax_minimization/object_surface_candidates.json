@@ -1,0 +1,4 @@
+{
+  "class_sigil": ["§", "$"],
+  "self_binder": ["#", "self"]
+}

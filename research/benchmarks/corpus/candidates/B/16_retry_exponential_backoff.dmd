@@ -1,0 +1,9 @@
+@r(y:[B],b:I,m:I)->R{
+  w:=[] a:=0
+  *while(a<=m){
+    ?a<ln(y)&y[a]{>{ok:t,tries:a+1,wait:w}}!{
+      ?a==m{>{ok:f,tries:a+1,wait:w}}!{w+:b*(2^a) a=a+1}
+    }
+  }
+  >{ok:f,tries:m+1,wait:w}
+}

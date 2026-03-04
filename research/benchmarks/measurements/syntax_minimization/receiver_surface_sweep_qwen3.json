@@ -1,0 +1,78 @@
+{
+  "tokenizer": "Qwen/Qwen3-8B",
+  "tokenizer_json": "/home/sebastyijan/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218/tokenizer.json",
+  "rows": [
+    {
+      "variant": "implicit_dollar",
+      "avg_tokens": 10.333333333333334,
+      "counts": [
+        7,
+        13,
+        11
+      ]
+    },
+    {
+      "variant": "implicit_hash",
+      "avg_tokens": 10.333333333333334,
+      "counts": [
+        7,
+        13,
+        11
+      ]
+    },
+    {
+      "variant": "implicit_at",
+      "avg_tokens": 11,
+      "counts": [
+        7,
+        15,
+        11
+      ]
+    },
+    {
+      "variant": "explicit_r",
+      "avg_tokens": 11.666666666666666,
+      "counts": [
+        9,
+        13,
+        13
+      ]
+    },
+    {
+      "variant": "explicit_s",
+      "avg_tokens": 11.666666666666666,
+      "counts": [
+        9,
+        13,
+        13
+      ]
+    },
+    {
+      "variant": "explicit_self",
+      "avg_tokens": 11.666666666666666,
+      "counts": [
+        9,
+        13,
+        13
+      ]
+    },
+    {
+      "variant": "explicit__",
+      "avg_tokens": 12.333333333333334,
+      "counts": [
+        9,
+        15,
+        13
+      ]
+    },
+    {
+      "variant": "explicit_this",
+      "avg_tokens": 12.333333333333334,
+      "counts": [
+        9,
+        15,
+        13
+      ]
+    }
+  ]
+}

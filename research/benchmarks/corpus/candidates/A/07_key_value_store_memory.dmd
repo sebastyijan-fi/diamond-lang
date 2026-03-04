@@ -1,0 +1,10 @@
+fn kv(ops:[{k:s,a:s,v:s}])->[s]{
+  var m={}
+  var out=[]
+  for o in ops{
+    if o.k=="set"{m[o.a]=o.v}
+    else if o.k=="get"{out.push(get(m,o.a,""))}
+    else if o.k=="del"{del m[o.a]}
+  }
+  ret out
+}

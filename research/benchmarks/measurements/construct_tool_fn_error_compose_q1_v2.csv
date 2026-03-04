@@ -1,0 +1,6 @@
+program,python_tokens,python_with_tools,diamond_base,diamond_full,syntax_reduction,tool_overhead,net_reduction,vs_python_with_tools
+01_fizzbuzz,159,214,43,48,0.729560,0.116279,0.698113,0.775701
+04_url_router,75,110,30,35,0.600000,0.166667,0.533333,0.681818
+08_csv_parser,67,151,21,27,0.686567,0.285714,0.597015,0.821192
+16_retry_exponential_backoff,191,249,105,116,0.450262,0.104762,0.392670,0.534137
+TOTAL,492,724,199,226,0.595528,0.135678,0.540650,0.687845

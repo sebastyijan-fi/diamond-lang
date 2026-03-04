@@ -1,0 +1,21 @@
+{
+  "language": "diamond",
+  "profile_version": "v1",
+  "status": "stable",
+  "match_exhaustiveness": {
+    "require_catchall": true,
+    "catchall_syntax": ["_", "IDENT"],
+    "disallow_duplicate_literal_arms": true,
+    "subject_type_dependent_exhaustiveness": false
+  },
+  "refs": {
+    "semantic_contract": "docs/decisions/profile_v1/SEMANTIC_CONTRACTS.md",
+    "policy": "docs/decisions/profile_v1/MATCH_EXHAUSTIVENESS_POLICY_V1.md",
+    "validator": "src/transpiler/semantic_validate.py"
+  },
+  "diagnostics": [
+    "match expression must include a wildcard or capture arm for exhaustiveness",
+    "duplicate match literal pattern",
+    "match expression must include at least one arm"
+  ]
+}

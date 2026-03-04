@@ -1,0 +1,1 @@
+kv^(c,t,b)(ops:[O])>[S]=fold(ops,{m:{},o:[]},s,t,t.k=="set"?{m:put(s.m,t.a,t.v),o:s.o}:t.k=="get"?{m:s.m,o:s.o+[get(s.m,t.a,"")]}:t.k=="del"?{m:del(s.m,t.a),o:s.o}:s)?.o

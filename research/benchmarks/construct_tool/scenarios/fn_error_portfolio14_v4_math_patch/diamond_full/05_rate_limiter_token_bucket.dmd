@@ -1,0 +1,4 @@
+rl^(c,t,b)(ev:[O],c:I,r:I)>[B]=fd(ev,{t:c,l:0,o:[]},s,e,st(s,e,c,r)?).o
+st(s:M,e:O,c:I,r:I)>M=up(s,e,c,r)?
+up(s:M,e:O,c:I,r:I)>M=tk(min(c,s.t+max(0,e.t-s.l)*r),e.c,e.t,s)?
+tk(t:I,k:I,tm:I,s:M)>M=t>=k?{t:t-k,l:tm,o:s.o+[t]}:{t:t,l:tm,o:s.o+[f]}

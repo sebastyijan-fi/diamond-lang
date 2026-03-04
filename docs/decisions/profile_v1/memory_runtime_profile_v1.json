@@ -1,0 +1,38 @@
+{
+  "language": "diamond",
+  "profile_version": "v1",
+  "status": "stable",
+  "memory_runtime": {
+    "python_model": "gc",
+    "js_model": "gc",
+    "rust_model": "rc_refcell_compat",
+    "manual_memory": false,
+    "deterministic_destructor": false
+  },
+  "safety_boundary": {
+    "unsafe_language_surface": "none",
+    "rust_unsafe_blocks_allowed": false,
+    "audit_mode": "static_policy_gate"
+  },
+  "ffi_abi": {
+    "c_abi_mode": "host_extern_bridge",
+    "runtime_symbol": "extern_call",
+    "default_behavior": "not_implemented"
+  },
+  "refs": {
+    "python_runtime": "src/transpiler/runtime/diamond_runtime.py",
+    "rust_runtime": "src/transpiler/runtime/diamond_runtime.rs",
+    "rust_backend": "src/transpiler/backends/rust_backend.py",
+    "object_contract": "docs/decisions/profile_v1/OBJECT_SEMANTICS_V1.md",
+    "semantic_contract": "docs/decisions/profile_v1/SEMANTIC_CONTRACTS.md",
+    "interop_policy": "docs/decisions/profile_v1/INTEROP_POLICY_V1.md",
+    "conformance_cases": "src/conformance/cases/runtime_v0_core.json"
+  },
+  "conformance": {
+    "required_case_ids": [
+      "extern_call.stub",
+      "try_catch.reraise",
+      "try_catch.over.propagate"
+    ]
+  }
+}

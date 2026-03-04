@@ -1,0 +1,4 @@
+fn parse_int(s:string)->Result[int,string]{
+  if is_int(s){return Ok(to_int(s))}
+  else{return Err("bad")}
+}

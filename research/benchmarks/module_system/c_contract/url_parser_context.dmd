@@ -1,0 +1,12 @@
+//@types exposes trim_slash(s:S)>S,is_abs(s:S)>B,as_i(s:S)>I
+//@scanner exposes norm_path(p:S)>S,abs_path(p:S)>B,segs(p:S)>[S],first(p:S)>S,last(p:S)>S,seg_count(p:S)>I
+
+@parser{
+  parse(p:S)>O={
+    abs:scanner.abs_path(p),
+    n:ln(scanner.segs(p)),
+    h:scanner.first(p),
+    t:scanner.last(p),
+    i:scanner.seg_count(p)
+  }
+}

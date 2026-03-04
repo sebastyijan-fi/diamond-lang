@@ -1,0 +1,2 @@
+sgn(s:S)>I=s=="+"?1:-1
+tzo(h:S,m:S,s:S)>O=tzoff((sgn(s)*I(h)),(sgn(s)*I(m)))

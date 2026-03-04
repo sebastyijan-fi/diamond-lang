@@ -1,28 +1,13 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+## Unreleased
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+- Initial project polish for release visibility and workflow consistency.
+- Added contributor/security docs and standard contributor-facing structure.
+- Added `.github/workflows/v1-gates.yml` to gate V1 validation on PRs/pushes.
 
-## [Unreleased]
+## 0.1.0 - V1 Workbench Baseline
 
-### Added
-- Initial scaffolding for documentation, packages, and examples directories.
-- Project governance and contribution guidelines.
-- Roadmap definition for specification, compiler, runtime, security, ML enablement, and tooling workstreams.
-
-### Changed
-- N/A
-
-### Deprecated
-- N/A
-
-### Removed
-- N/A
-
-### Fixed
-- N/A
-
-### Security
-- N/A
+- Established full V1 contracts and scoped workbook completion.
+- Introduced canonical gate runner: `scripts/ci/validate_v1_gates.sh`.
+- Consolidated documentation and archived legacy notes.

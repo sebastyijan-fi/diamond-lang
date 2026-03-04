@@ -1,0 +1,16 @@
+@core{
+  mk(ev:S,p:S)>S=ev+":"+p
+  sub(h:S,ev:S)>S=h+"@"+ev
+}
+
+@handlers{
+  log(ev:S,p:S)>S=core.mk(ev,p)
+  audit(ev:S,p:S)>S="a:"+core.mk(ev,p)
+  fan(ev:S,p:S)>[S]=[handlers.log(ev,p),handlers.audit(ev,p)]
+}
+
+@registry{
+  dispatch(ev:S,p:S)>[S]=handlers.fan(ev,p)
+  routes(ev:S)>[S]=[core.sub("log",ev),core.sub("audit",ev)]
+  mirror(ev:S,p:S)>[S]=[handlers.log(ev,p),handlers.audit(ev,p),core.mk(ev,p)]
+}

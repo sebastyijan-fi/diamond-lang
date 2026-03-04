@@ -1,0 +1,1322 @@
+{
+  "FN_DEF": [
+    {
+      "candidate": "!",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        7,
+        7,
+        8
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 7,
+      "context_max": 8,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "$",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        7,
+        7,
+        8
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 7,
+      "context_max": 8,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "::",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        7,
+        7,
+        8
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 7,
+      "context_max": 8,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "=>",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        7,
+        7,
+        8
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 7,
+      "context_max": 8,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "@",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        7,
+        7,
+        8
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 7,
+      "context_max": 8,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "^",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        7,
+        7,
+        8
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 7,
+      "context_max": 8,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "def",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        7,
+        7,
+        8
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 7,
+      "context_max": 8,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "f",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        7,
+        7,
+        8
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 7,
+      "context_max": 8,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "fn",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        7,
+        7,
+        8
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 7,
+      "context_max": 8,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "~",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        7,
+        7,
+        8
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 7,
+      "context_max": 8,
+      "combined_score": 8.333333333333332
+    }
+  ],
+  "IF": [
+    {
+      "candidate": "!",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        8,
+        8,
+        9
+      ],
+      "context_avg": 8.333333333333334,
+      "context_min": 8,
+      "context_max": 9,
+      "combined_score": 9.333333333333334
+    },
+    {
+      "candidate": "?",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        8,
+        8,
+        9
+      ],
+      "context_avg": 8.333333333333334,
+      "context_min": 8,
+      "context_max": 9,
+      "combined_score": 9.333333333333334
+    },
+    {
+      "candidate": "?:",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        8,
+        8,
+        9
+      ],
+      "context_avg": 8.333333333333334,
+      "context_min": 8,
+      "context_max": 9,
+      "combined_score": 9.333333333333334
+    },
+    {
+      "candidate": "cond",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        8,
+        8,
+        9
+      ],
+      "context_avg": 8.333333333333334,
+      "context_min": 8,
+      "context_max": 9,
+      "combined_score": 9.333333333333334
+    },
+    {
+      "candidate": "i",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        8,
+        8,
+        9
+      ],
+      "context_avg": 8.333333333333334,
+      "context_min": 8,
+      "context_max": 9,
+      "combined_score": 9.333333333333334
+    },
+    {
+      "candidate": "if",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        8,
+        8,
+        9
+      ],
+      "context_avg": 8.333333333333334,
+      "context_min": 8,
+      "context_max": 9,
+      "combined_score": 9.333333333333334
+    },
+    {
+      "candidate": "when",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        8,
+        8,
+        9
+      ],
+      "context_avg": 8.333333333333334,
+      "context_min": 8,
+      "context_max": 9,
+      "combined_score": 9.333333333333334
+    },
+    {
+      "candidate": "|",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        8,
+        8,
+        9
+      ],
+      "context_avg": 8.333333333333334,
+      "context_min": 8,
+      "context_max": 9,
+      "combined_score": 9.333333333333334
+    },
+    {
+      "candidate": "@?",
+      "isolation_tokens": 2,
+      "context_tokens": [
+        9,
+        9,
+        10
+      ],
+      "context_avg": 9.333333333333334,
+      "context_min": 9,
+      "context_max": 10,
+      "combined_score": 11.333333333333334
+    },
+    {
+      "candidate": "~?",
+      "isolation_tokens": 2,
+      "context_tokens": [
+        9,
+        9,
+        10
+      ],
+      "context_avg": 9.333333333333334,
+      "context_min": 9,
+      "context_max": 10,
+      "combined_score": 11.333333333333334
+    }
+  ],
+  "ELSE": [
+    {
+      "candidate": "!",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        6,
+        6,
+        4
+      ],
+      "context_avg": 5.333333333333333,
+      "context_min": 4,
+      "context_max": 6,
+      "combined_score": 6.333333333333333
+    },
+    {
+      "candidate": "/",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        6,
+        6,
+        4
+      ],
+      "context_avg": 5.333333333333333,
+      "context_min": 4,
+      "context_max": 6,
+      "combined_score": 6.333333333333333
+    },
+    {
+      "candidate": ":",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        6,
+        6,
+        4
+      ],
+      "context_avg": 5.333333333333333,
+      "context_min": 4,
+      "context_max": 6,
+      "combined_score": 6.333333333333333
+    },
+    {
+      "candidate": "e",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        6,
+        6,
+        4
+      ],
+      "context_avg": 5.333333333333333,
+      "context_min": 4,
+      "context_max": 6,
+      "combined_score": 6.333333333333333
+    },
+    {
+      "candidate": ";",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        7,
+        7,
+        4
+      ],
+      "context_avg": 6.0,
+      "context_min": 4,
+      "context_max": 7,
+      "combined_score": 7.0
+    },
+    {
+      "candidate": "??",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        7,
+        7,
+        4
+      ],
+      "context_avg": 6.0,
+      "context_min": 4,
+      "context_max": 7,
+      "combined_score": 7.0
+    },
+    {
+      "candidate": "alt",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        7,
+        7,
+        4
+      ],
+      "context_avg": 6.0,
+      "context_min": 4,
+      "context_max": 7,
+      "combined_score": 7.0
+    },
+    {
+      "candidate": "else",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        7,
+        7,
+        4
+      ],
+      "context_avg": 6.0,
+      "context_min": 4,
+      "context_max": 7,
+      "combined_score": 7.0
+    },
+    {
+      "candidate": "or",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        7,
+        7,
+        4
+      ],
+      "context_avg": 6.0,
+      "context_min": 4,
+      "context_max": 7,
+      "combined_score": 7.0
+    },
+    {
+      "candidate": "|",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        7,
+        7,
+        4
+      ],
+      "context_avg": 6.0,
+      "context_min": 4,
+      "context_max": 7,
+      "combined_score": 7.0
+    }
+  ],
+  "CASE": [
+    {
+      "candidate": "#",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        11,
+        5,
+        6
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 5,
+      "context_max": 11,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "::",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        11,
+        5,
+        6
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 5,
+      "context_max": 11,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "=>",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        11,
+        5,
+        6
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 5,
+      "context_max": 11,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "?",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        11,
+        5,
+        6
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 5,
+      "context_max": 11,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "c",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        11,
+        5,
+        6
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 5,
+      "context_max": 11,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "match",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        11,
+        5,
+        6
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 5,
+      "context_max": 11,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "when",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        11,
+        5,
+        6
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 5,
+      "context_max": 11,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "|",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        11,
+        5,
+        6
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 5,
+      "context_max": 11,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "~",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        11,
+        5,
+        6
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 5,
+      "context_max": 11,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "case",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        11,
+        5,
+        7
+      ],
+      "context_avg": 7.666666666666667,
+      "context_min": 5,
+      "context_max": 11,
+      "combined_score": 8.666666666666668
+    }
+  ],
+  "ARROW": [
+    {
+      "candidate": "/>",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        3,
+        3,
+        2
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": ":",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        3,
+        3,
+        2
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": "=>",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        3,
+        3,
+        2
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": ">",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        3,
+        3,
+        2
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": "->",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        4,
+        3,
+        2
+      ],
+      "context_avg": 3.0,
+      "context_min": 2,
+      "context_max": 4,
+      "combined_score": 4.0
+    },
+    {
+      "candidate": "::",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        4,
+        3,
+        2
+      ],
+      "context_avg": 3.0,
+      "context_min": 2,
+      "context_max": 4,
+      "combined_score": 4.0
+    },
+    {
+      "candidate": "=",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        4,
+        3,
+        2
+      ],
+      "context_avg": 3.0,
+      "context_min": 2,
+      "context_max": 4,
+      "combined_score": 4.0
+    },
+    {
+      "candidate": "~>",
+      "isolation_tokens": 2,
+      "context_tokens": [
+        5,
+        3,
+        2
+      ],
+      "context_avg": 3.3333333333333335,
+      "context_min": 2,
+      "context_max": 5,
+      "combined_score": 5.333333333333334
+    },
+    {
+      "candidate": "-|",
+      "isolation_tokens": 2,
+      "context_tokens": [
+        4,
+        4,
+        3
+      ],
+      "context_avg": 3.6666666666666665,
+      "context_min": 3,
+      "context_max": 4,
+      "combined_score": 5.666666666666666
+    },
+    {
+      "candidate": "->>",
+      "isolation_tokens": 2,
+      "context_tokens": [
+        5,
+        4,
+        3
+      ],
+      "context_avg": 4.0,
+      "context_min": 3,
+      "context_max": 5,
+      "combined_score": 6.0
+    }
+  ],
+  "LET": [
+    {
+      "candidate": "$",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        4,
+        4,
+        5
+      ],
+      "context_avg": 4.333333333333333,
+      "context_min": 4,
+      "context_max": 5,
+      "combined_score": 5.333333333333333
+    },
+    {
+      "candidate": ":=",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        4,
+        4,
+        5
+      ],
+      "context_avg": 4.333333333333333,
+      "context_min": 4,
+      "context_max": 5,
+      "combined_score": 5.333333333333333
+    },
+    {
+      "candidate": "=",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        4,
+        4,
+        5
+      ],
+      "context_avg": 4.333333333333333,
+      "context_min": 4,
+      "context_max": 5,
+      "combined_score": 5.333333333333333
+    },
+    {
+      "candidate": "@",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        4,
+        4,
+        5
+      ],
+      "context_avg": 4.333333333333333,
+      "context_min": 4,
+      "context_max": 5,
+      "combined_score": 5.333333333333333
+    },
+    {
+      "candidate": "_",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        4,
+        4,
+        5
+      ],
+      "context_avg": 4.333333333333333,
+      "context_min": 4,
+      "context_max": 5,
+      "combined_score": 5.333333333333333
+    },
+    {
+      "candidate": "bind",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        4,
+        4,
+        5
+      ],
+      "context_avg": 4.333333333333333,
+      "context_min": 4,
+      "context_max": 5,
+      "combined_score": 5.333333333333333
+    },
+    {
+      "candidate": "l",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        4,
+        4,
+        5
+      ],
+      "context_avg": 4.333333333333333,
+      "context_min": 4,
+      "context_max": 5,
+      "combined_score": 5.333333333333333
+    },
+    {
+      "candidate": "let",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        4,
+        4,
+        5
+      ],
+      "context_avg": 4.333333333333333,
+      "context_min": 4,
+      "context_max": 5,
+      "combined_score": 5.333333333333333
+    },
+    {
+      "candidate": "var",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        4,
+        4,
+        5
+      ],
+      "context_avg": 4.333333333333333,
+      "context_min": 4,
+      "context_max": 5,
+      "combined_score": 5.333333333333333
+    },
+    {
+      "candidate": "with",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        4,
+        4,
+        5
+      ],
+      "context_avg": 4.333333333333333,
+      "context_min": 4,
+      "context_max": 5,
+      "combined_score": 5.333333333333333
+    }
+  ],
+  "LAMBDA": [
+    {
+      "candidate": "!",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        9,
+        6,
+        7
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 6,
+      "context_max": 9,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "@",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        9,
+        6,
+        7
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 6,
+      "context_max": 9,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "\\",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        9,
+        6,
+        7
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 6,
+      "context_max": 9,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "^",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        9,
+        6,
+        7
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 6,
+      "context_max": 9,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "fn",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        9,
+        6,
+        7
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 6,
+      "context_max": 9,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "lambda",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        9,
+        6,
+        7
+      ],
+      "context_avg": 7.333333333333333,
+      "context_min": 6,
+      "context_max": 9,
+      "combined_score": 8.333333333333332
+    },
+    {
+      "candidate": "?",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        9,
+        7,
+        7
+      ],
+      "context_avg": 7.666666666666667,
+      "context_min": 7,
+      "context_max": 9,
+      "combined_score": 8.666666666666668
+    },
+    {
+      "candidate": "~",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        10,
+        6,
+        8
+      ],
+      "context_avg": 8.0,
+      "context_min": 6,
+      "context_max": 10,
+      "combined_score": 9.0
+    },
+    {
+      "candidate": "->",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        10,
+        7,
+        8
+      ],
+      "context_avg": 8.333333333333334,
+      "context_min": 7,
+      "context_max": 10,
+      "combined_score": 9.333333333333334
+    },
+    {
+      "candidate": "=>",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        10,
+        7,
+        8
+      ],
+      "context_avg": 8.333333333333334,
+      "context_min": 7,
+      "context_max": 10,
+      "combined_score": 9.333333333333334
+    }
+  ],
+  "RESULT_OK": [
+    {
+      "candidate": "+",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        3
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": "k",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        3
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": "ok",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        3
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": "pass",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        3
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": "t",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        3
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": "v",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        3
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": "yes",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        3
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": "1",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        4,
+        3
+      ],
+      "context_avg": 3.0,
+      "context_min": 2,
+      "context_max": 4,
+      "combined_score": 4.0
+    },
+    {
+      "candidate": "done",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        4
+      ],
+      "context_avg": 3.0,
+      "context_min": 2,
+      "context_max": 4,
+      "combined_score": 4.0
+    },
+    {
+      "candidate": "good",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        4
+      ],
+      "context_avg": 3.0,
+      "context_min": 2,
+      "context_max": 4,
+      "combined_score": 4.0
+    }
+  ],
+  "RESULT_ERR": [
+    {
+      "candidate": "!",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        3
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": "-",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        3
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": "bad",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        3
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": "e",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        3
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": "err",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        3
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": "f",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        3
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": "fail",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        3
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": "no",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        3
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": "x",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        3
+      ],
+      "context_avg": 2.6666666666666665,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.6666666666666665
+    },
+    {
+      "candidate": "0",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        4,
+        3
+      ],
+      "context_avg": 3.0,
+      "context_min": 2,
+      "context_max": 4,
+      "combined_score": 4.0
+    }
+  ],
+  "PROPAGATE": [
+    {
+      "candidate": "%",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        2,
+        2
+      ],
+      "context_avg": 2.0,
+      "context_min": 2,
+      "context_max": 2,
+      "combined_score": 3.0
+    },
+    {
+      "candidate": "*",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        2,
+        2
+      ],
+      "context_avg": 2.0,
+      "context_min": 2,
+      "context_max": 2,
+      "combined_score": 3.0
+    },
+    {
+      "candidate": "->",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        2,
+        2
+      ],
+      "context_avg": 2.0,
+      "context_min": 2,
+      "context_max": 2,
+      "combined_score": 3.0
+    },
+    {
+      "candidate": "/",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        2,
+        2
+      ],
+      "context_avg": 2.0,
+      "context_min": 2,
+      "context_max": 2,
+      "combined_score": 3.0
+    },
+    {
+      "candidate": "?",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        2,
+        2
+      ],
+      "context_avg": 2.0,
+      "context_min": 2,
+      "context_max": 2,
+      "combined_score": 3.0
+    },
+    {
+      "candidate": "!",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        2
+      ],
+      "context_avg": 2.3333333333333335,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.3333333333333335
+    },
+    {
+      "candidate": "$",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        2
+      ],
+      "context_avg": 2.3333333333333335,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.3333333333333335
+    },
+    {
+      "candidate": "??",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        2
+      ],
+      "context_avg": 2.3333333333333335,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.3333333333333335
+    },
+    {
+      "candidate": "^",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        2
+      ],
+      "context_avg": 2.3333333333333335,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.3333333333333335
+    },
+    {
+      "candidate": "~",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        2,
+        3,
+        2
+      ],
+      "context_avg": 2.3333333333333335,
+      "context_min": 2,
+      "context_max": 3,
+      "combined_score": 3.3333333333333335
+    }
+  ]
+}

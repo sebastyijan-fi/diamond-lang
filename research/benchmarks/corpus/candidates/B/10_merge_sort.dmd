@@ -1,0 +1,7 @@
+@mg(a:[I],b:[I])->[I]{
+  o:=[] i:=0 j:=0
+  *while(i<ln(a)&j<ln(b)){?a[i]<=b[j]{o+:a[i] i=i+1}!{o+:b[j] j=j+1}}
+  >o+a[i:]+b[j:]
+}
+
+@ms(x:[I])->[I]{?ln(x)<2{>x}!{m:=ln(x)/2 >mg(ms(x[:m]),ms(x[m:]))}}

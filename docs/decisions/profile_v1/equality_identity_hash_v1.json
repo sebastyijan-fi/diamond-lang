@@ -1,0 +1,30 @@
+{
+  "language": "diamond",
+  "profile_version": "v1",
+  "status": "stable",
+  "equality": {
+    "mode": "structural_deep_cycle_safe"
+  },
+  "identity": {
+    "mode": "reference"
+  },
+  "hash": {
+    "objects": "unhashable",
+    "scalars_stable": true
+  },
+  "runtime_refs": {
+    "python": "src/transpiler/runtime/diamond_runtime.py",
+    "js": "src/transpiler/runtime/diamond_runtime.js"
+  },
+  "conformance": {
+    "cases_file": "src/conformance/cases/runtime_v0_core.json",
+    "required_case_ids": [
+      "obj.alias.identity_true",
+      "obj.alias.mutation_visible",
+      "obj.eq.structural_true",
+      "obj.eq.structural_false",
+      "obj.eq.cycle_true",
+      "obj.eq.cycle_false"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+fn fizzbuzz(n:i)->[s]{
+  var out=[]
+  for i in 1..n{
+    let d3=i%3==0
+    let d5=i%5==0
+    if d3&&d5{out.push("FizzBuzz")}
+    else if d3{out.push("Fizz")}
+    else if d5{out.push("Buzz")}
+    else{out.push(str(i))}
+  }
+  ret out
+}

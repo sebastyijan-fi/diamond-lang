@@ -1,0 +1,1 @@
+qu(ops:[O])>[I]=fd(ops,{q:[],o:[]},x,t,t.k=="enq"?{q:x.q+[t.v],o:x.o}:t.k=="deq"&ln(x.q)>0?{q:x.q[1:],o:x.o+[x.q[0]]}:x).o

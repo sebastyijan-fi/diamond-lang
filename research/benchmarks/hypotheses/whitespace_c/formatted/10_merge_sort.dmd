@@ -1,0 +1,13 @@
+ms : [I] > [I] =
+  ln(x) < 2
+    ? x
+    : mg( ms(x[:m]) , ms(x[m:]) ) @ m = ln(x) / 2
+
+mg : [I] , [I] > [I] =
+  { o : [] , i : 0 , j : 0 } #
+    w(
+      i < ln(a) & j < ln(b) ,
+      a[i] <= b[j]
+        ? o + a[i] , i + 1
+        : o + b[j] , j + 1
+    ) > o + a[i:] + b[j:]

@@ -1,0 +1,5 @@
+nd^(c)(d:N,b:N,j:O,m:O)>N=(m==none?(is_tup(j)?((d*b)+rnd(j[0],j[1])):((d*b)+j)):min((is_tup(j)?((d*b)+rnd(j[0],j[1])):((d*b)+j)),m))
+ae^(c)(f:O,a:O,k:O,e:O,t:N,d:N,m:O,b:N,j:O,l:O,x:O)>O=(l==none?0:logw(l,x,d));slp(d);ri(f,a,k,e,(t-1),nd(d,b,j,m),m,b,j,l)
+ri^(c)(f:O,a:O,k:O,e:O,t:N,d:N,m:O,b:N,j:O,l:O)>O=(t?try(cw(f,a,k),x:isexc(x,e)?((t-1)==0?reraise:ae(f,a,k,e,t,d,m,b,j,l,x)):reraise):none)
+retry_call_core^(c)(f:O,fargs:O,fkwargs:O,exceptions:O,tries:N,delay:N,max_delay:O,backoff:N,jitter:O,logger:O)>O=ri(f,(fargs?fargs:[]),(fkwargs?fkwargs:{}),exceptions,tries,delay,max_delay,backoff,jitter,logger)
+retry_core(exceptions:O,tries:N,delay:N,max_delay:O,backoff:N,jitter:O,logger:O)>O=mk_retry(retry_call_core,exceptions,tries,delay,max_delay,backoff,jitter,logger)

@@ -1,0 +1,41 @@
+module app.order_api
+
+import std.http
+import std.json
+
+type Item = {name:string, qty:int, cents:int}
+type OrderReq = {user_id:string, items:list[Item]}
+type OrderOut = {user_id:string, item_count:int, total_cents:int}
+type ApiErr = {status:int, msg:string}
+
+func calc_total(items:list[Item]) -> int {
+  var total = 0
+  for item in items {
+    total = total + (item.cents * item.qty)
+  }
+  return total
+}
+
+func handle(req:http.Request) -> Result[http.Response, ApiErr] {
+  switch req.path {
+    case "/orders/total": {}
+    case _: { return Err({status:404, msg:"not_found"}) }
+  }
+
+  if req.method != "POST" {
+    return Err({status:405, msg:"method_not_allowed"})
+  }
+
+  let body:OrderReq = json.decode(req.body)?
+  if len(body.items) == 0 {
+    return Err({status:400, msg:"items_empty"})
+  }
+
+  let out:OrderOut = {
+    user_id: body.user_id,
+    item_count: len(body.items),
+    total_cents: calc_total(body.items),
+  }
+
+  return Ok(http.json(200, out))
+}

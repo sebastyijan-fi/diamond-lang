@@ -1,0 +1,9 @@
+fn handle(req:Request)->Response{
+  if req.method=="GET"{
+    match req.path{
+      "/users"->json(200,get_all_users())
+      "/health"->json(200,{status:"ok"})
+      _->json(404,{error:"not found"})
+    }
+  }else{json(405,{error:"method not allowed"})}
+}

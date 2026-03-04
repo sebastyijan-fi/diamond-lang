@@ -1,0 +1,2 @@
+bs^(c,t,b)(a:[I],x:I)>I=go(a,x,0,ln(a)-1)?
+go(a:[I],x:I,l:I,r:I)>I=l>r?-1:(a[(l+r)/2]==x?(l+r)/2:a[(l+r)/2]<x?go(a,x,(l+r)/2+1,r)?:go(a,x,l,(l+r)/2-1)?)

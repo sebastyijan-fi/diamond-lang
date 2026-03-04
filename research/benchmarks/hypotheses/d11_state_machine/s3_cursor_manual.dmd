@@ -1,0 +1,1 @@
+nx(s:S,i:N)>O=(i<ln(s)?[s[i],i+1]:[none,i])

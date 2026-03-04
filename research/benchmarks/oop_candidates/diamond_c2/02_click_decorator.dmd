@@ -1,0 +1,10 @@
+Command(n:S,cb:F,h:S)>{
+    {
+        invoke:(ctx)=cb!none?ctx.invoke(cb,**ctx.params):none
+    }
+}
+
+command(n:S,cls:F,**attrs)>F=(f:F)>F=cls(n!none?n:f.name.lower(),f,**attrs)
+
+// Decorators as raw function re-assignment
+sync_db=command(name:"sync",help:"Sync the database.")(()>S=print("Database synced"))

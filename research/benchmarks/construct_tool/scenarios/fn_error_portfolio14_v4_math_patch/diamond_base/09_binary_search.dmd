@@ -1,0 +1,2 @@
+bs(a:[I],x:I)>I=go(a,x,0,ln(a)-1)
+go(a:[I],x:I,l:I,r:I)>I=l>r?-1:(a[l$r]==x?l$r:a[l$r]<x?go(a,x,l$r+1,r):go(a,x,l,l$r-1))

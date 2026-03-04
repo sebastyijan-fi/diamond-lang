@@ -1,0 +1,19 @@
+@storage{
+  empty()>O={}
+  put(st:O,k:S,v:S)>O=st{k:v}
+  delk(st:O,k:S)>O=del(st,k)
+  getk(st:O,k:S)>S=get(st,k,"")
+}
+
+@serializer{
+  pack(st:O)>S=S(st)
+  unpack(raw:S)>O=O(raw)
+  key(k:S)>S="k:"+k
+}
+
+@api{
+  set(st:O,k:S,v:S)>O=storage.put(st,serializer.key(k),v)
+  drop(st:O,k:S)>O=storage.delk(st,serializer.key(k))
+  fetch(st:O,k:S)>S=storage.getk(st,serializer.key(k))
+  round(st:O)>O=serializer.unpack(serializer.pack(st))
+}

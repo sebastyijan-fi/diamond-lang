@@ -1,0 +1,10 @@
+core_mk(ev:S,p:S)>S=ev+":"+p
+core_sub(h:S,ev:S)>S=h+"@"+ev
+
+handlers_log(ev:S,p:S)>S=core_mk(ev,p)
+handlers_audit(ev:S,p:S)>S="a:"+core_mk(ev,p)
+handlers_fan(ev:S,p:S)>[S]=[handlers_log(ev,p),handlers_audit(ev,p)]
+
+registry_dispatch(ev:S,p:S)>[S]=handlers_fan(ev,p)
+registry_routes(ev:S)>[S]=[core_sub("log",ev),core_sub("audit",ev)]
+registry_mirror(ev:S,p:S)>[S]=[handlers_log(ev,p),handlers_audit(ev,p),core_mk(ev,p)]

@@ -1,0 +1,21 @@
+id,slug,title,status
+01,01_fizzbuzz,FizzBuzz,scaffold
+02,02_fibonacci_recursive_iterative,Fibonacci (recursive + iterative),scaffold
+03,03_json_parser_simplified,JSON parser (simplified),scaffold
+04,04_url_router,URL router,scaffold
+05,05_rate_limiter_token_bucket,Rate limiter (token bucket),scaffold
+06,06_http_handler_routing,HTTP handler with routing,scaffold
+07,07_key_value_store_memory,Key-value store (in-memory),scaffold
+08,08_csv_parser,CSV parser,scaffold
+09,09_binary_search,Binary search,scaffold
+10,10_merge_sort,Merge sort,scaffold
+11,11_stack,Stack implementation,scaffold
+12,12_queue,Queue implementation,scaffold
+13,13_expression_calculator,Simple calculator (expression parser),scaffold
+14,14_string_template_engine,String template engine,scaffold
+15,15_event_emitter,Event emitter,scaffold
+16,16_retry_exponential_backoff,Retry with exponential backoff,scaffold
+17,17_lru_cache,LRU cache,scaffold
+18,18_trie_prefix_tree,Trie (prefix tree),scaffold
+19,19_config_parser_ini_toml_subset,Config parser (INI or TOML subset),scaffold
+20,20_pubsub_broker_memory,Pub/sub message broker (in-memory),scaffold

@@ -1,0 +1,2 @@
+jp(x:S)>M=prs(x)
+prs(x:S)>M={ok:t,v:x}

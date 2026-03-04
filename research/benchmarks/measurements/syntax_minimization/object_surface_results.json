@@ -1,0 +1,58 @@
+{
+  "class_sigil": [
+    {
+      "candidate": "$",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        12,
+        14,
+        16
+      ],
+      "context_avg": 14.0,
+      "context_min": 12,
+      "context_max": 16,
+      "combined_score": 15.0
+    },
+    {
+      "candidate": "\u00a7",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        12,
+        14,
+        16
+      ],
+      "context_avg": 14.0,
+      "context_min": 12,
+      "context_max": 16,
+      "combined_score": 15.0
+    }
+  ],
+  "self_binder": [
+    {
+      "candidate": "self",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        9,
+        11,
+        13
+      ],
+      "context_avg": 11.0,
+      "context_min": 9,
+      "context_max": 13,
+      "combined_score": 12.0
+    },
+    {
+      "candidate": "#",
+      "isolation_tokens": 1,
+      "context_tokens": [
+        10,
+        13,
+        14
+      ],
+      "context_avg": 12.333333333333334,
+      "context_min": 10,
+      "context_max": 14,
+      "combined_score": 13.333333333333334
+    }
+  ]
+}

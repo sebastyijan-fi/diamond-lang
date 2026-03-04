@@ -1,0 +1,84 @@
+{
+  "record_type": "probe_repo_report",
+  "ts_utc": "2026-03-03T21:02:13Z",
+  "run_id": "run_20260303T210213Z_probe_dotenv_probe",
+  "repo_url": "https://github.com/theskumar/python-dotenv.git",
+  "repo_name": "dotenv_probe",
+  "commit": "da0c820",
+  "license": "BSD-3-Clause",
+  "tests": {
+    "attempted": true,
+    "exit_code": 1,
+    "summary": "12 failed, 205 passed, 1 skipped in 0.76s",
+    "output_tail": "                    err_msg = \"\"\n                    err_filename = None\n                else:\n                    err_filename = orig_executable\n                if errno_num != 0:\n                    err_msg = os.strerror(errno_num)\n                if err_filename is not None:\n>                   raise child_exception_type(errno_num, err_msg, err_filename)\nE                   FileNotFoundError: [Errno 2] No such file or directory: 'dotenv'\n\n/mnt/data/home/sebastyijan/.local/share/mise/installs/python/3.14.3/lib/python3.14/subprocess.py:1989: FileNotFoundError\n=========================== short test summary info ============================\nFAILED tests/test_cli.py::test_get_default_path - FileNotFoundError: [Errno 2...\nFAILED tests/test_cli.py::test_run - FileNotFoundError: [Errno 2] No such fil...\nFAILED tests/test_cli.py::test_run_with_existing_variable - FileNotFoundError...\nFAILED tests/test_cli.py::test_run_with_existing_variable_not_overridden - Fi...\nFAILED tests/test_cli.py::test_run_with_none_value - FileNotFoundError: [Errn...\nFAILED tests/test_cli.py::test_run_with_other_env - FileNotFoundError: [Errno...\nFAILED tests/test_cli.py::test_run_without_cmd - FileNotFoundError: [Errno 2]...\nFAILED tests/test_cli.py::test_run_with_invalid_cmd - FileNotFoundError: [Err...\nFAILED tests/test_cli.py::test_run_with_env_missing_and_invalid_cmd - FileNot...\nFAILED tests/test_cli.py::test_run_with_version - FileNotFoundError: [Errno 2...\nFAILED tests/test_cli.py::test_run_with_command_flags - FileNotFoundError: [E...\nFAILED tests/test_cli.py::test_run_with_dotenv_and_command_flags - FileNotFou...\n12 failed, 205 passed, 1 skipped in 0.76s"
+  },
+  "features": {
+    "file_count": 8,
+    "class_def": 10,
+    "func_def": 65,
+    "async_func_def": 0,
+    "decorator_use": 34,
+    "with_stmt": 9,
+    "async_with_stmt": 0,
+    "for_stmt": 9,
+    "while_stmt": 3,
+    "try_stmt": 13,
+    "raise_stmt": 9,
+    "yield_expr": 12,
+    "lambda_expr": 0,
+    "list_comp": 0,
+    "set_comp": 0,
+    "dict_comp": 1,
+    "gen_exp": 1,
+    "match_stmt": 0,
+    "named_expr": 0,
+    "max_function_nesting": 2
+  },
+  "gaps": {
+    "friction_score": 256,
+    "signals": [
+      {
+        "name": "decorators",
+        "severity": "high",
+        "count": 34,
+        "note": "Decorator-heavy APIs need first-class lowering profile."
+      },
+      {
+        "name": "exception_flow",
+        "severity": "medium",
+        "count": 22,
+        "note": "Exception paths are supported but high-volume stress target."
+      },
+      {
+        "name": "generator_model",
+        "severity": "high",
+        "count": 13,
+        "note": "yield/generator semantics need core design."
+      },
+      {
+        "name": "loop_statements",
+        "severity": "medium",
+        "count": 12,
+        "note": "Statement loops may need compact canonical form."
+      },
+      {
+        "name": "class_model",
+        "severity": "high",
+        "count": 10,
+        "note": "Direct class syntax/object semantics gap for full ports."
+      },
+      {
+        "name": "context_managers",
+        "severity": "medium",
+        "count": 9,
+        "note": "with/async with requires effect-boundary model."
+      },
+      {
+        "name": "comprehensions",
+        "severity": "low",
+        "count": 1,
+        "note": "Could be lowered via map/fold; assess token tradeoff."
+      }
+    ]
+  }
+}

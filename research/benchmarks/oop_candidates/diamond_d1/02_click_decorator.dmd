@@ -1,0 +1,11 @@
+!Command(n:S,cb:F,h:S){
+    ~invoke(ctx)=cb!none?ctx.invoke(cb,**ctx.params):none
+}
+
+command(n:S,cls:Command,**attrs)>F=(f:F)>F={
+    cmd=cls(n!none?n:f.name.lower(),callback:f,**attrs);
+    cmd
+}
+
+@command(name:"sync",help:"Sync the database.")
+sync_db()>S=print("Database synced")

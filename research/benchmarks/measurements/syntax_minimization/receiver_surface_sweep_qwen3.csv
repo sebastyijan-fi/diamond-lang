@@ -1,0 +1,9 @@
+variant,avg_tokens,c1,c2,c3
+implicit_dollar,10.3333,7,13,11
+implicit_hash,10.3333,7,13,11
+implicit_at,11.0000,7,15,11
+explicit_r,11.6667,9,13,13
+explicit_s,11.6667,9,13,13
+explicit_self,11.6667,9,13,13
+explicit__,12.3333,9,15,13
+explicit_this,12.3333,9,15,13

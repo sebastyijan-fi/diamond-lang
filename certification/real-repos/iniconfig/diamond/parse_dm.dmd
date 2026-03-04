@@ -1,0 +1,14 @@
+commentchars()>S="#;"
+iscommentline_dm(line:S)>B=ini_iscommentline(line)
+parseline_dm(path:S,line:S,lineno:N,strip_inline_comments:B,strip_section_whitespace:B)>O=ini_parseline(path,line,lineno,strip_inline_comments,strip_section_whitespace)
+parse_lines_dm(path:S,line_iter:O,strip_inline_comments:B,strip_section_whitespace:B)>O=ini_parse_lines(path,line_iter,strip_inline_comments,strip_section_whitespace)
+mk_state(path:S)>O={p:path,sec:{},src:{}}
+mk_dup_section_msg(sec:S)>S=("duplicate section "+q(sec))
+mk_dup_name_msg(name:S)>S=("duplicate name "+q(name))
+on_section(st:O,ln:N,sec:S)>O=(get(st.sec,sec,none)==none?st{sec:put(st.sec,sec,{}),src:put(st.src,pair(sec,none),ln)}:ini_raise(st.p,ln,mk_dup_section_msg(sec)))
+on_name(st:O,ln:N,sec:S,name:S,val:O)>O=(get(st.sec,sec,none)==none?ini_raise(st.p,ln,"no section header defined"):(get(get(st.sec,sec,none),name,none)==none?st{sec:put(st.sec,sec,put(get(st.sec,sec,none),name,val)),src:put(st.src,pair(sec,name),ln)}:ini_raise(st.p,ln,mk_dup_name_msg(name))))
+on_token(st:O,ln:N,sec:O,name:O,val:O)>O=(sec==none?ini_raise(st.p,ln,"no section header defined"):(name==none?on_section(st,ln,sec):on_name(st,ln,sec,name,val)))
+apply_tok(st:O,tok:O)>O=on_token(st,tok[0],tok[1],tok[2],tok[3])
+reduce_tokens(path:S,toks:O)>O=fd(toks,mk_state(path),s,t,apply_tok(s,t))
+out_from_state(st:O)>O=[st.sec,st.src]
+parse_ini_data_dm(path:S,data:S,strip_inline_comments:B,strip_section_whitespace:B)>O=out_from_state(reduce_tokens(path,parse_lines_dm(path,splitln(data),strip_inline_comments,strip_section_whitespace)))

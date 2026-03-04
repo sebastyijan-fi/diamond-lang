@@ -1,0 +1,3 @@
+route=§Req>Res(path:S,method:S)|
+  >ping()=J200({ok:t})
+|

@@ -1,0 +1,2 @@
+ms(a:[I])>[I]=ln(a)<2?a:mg(ms(a[:ln(a)/2]),ms(a[ln(a)/2:]))
+mg(a:[I],b:[I])>[I]=ln(a)==0?b:ln(b)==0?a:a[0]<=b[0]?[a[0]]+mg(a[1:],b):[b[0]]+mg(a,b[1:])

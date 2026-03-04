@@ -1,0 +1,9 @@
+// Candidate 1: Rust/Go-like Struct + Methods
+// Uses `$` to define a struct and `.` for attached methods.
+$DotEnv(p:S,v:B,e:S){
+    d:M
+}
+
+.DotEnv.set_as_environment_variables()>B=d?{d#k,v:k!in(os.env)?(v!none?os.env=os.env+{k:v}):_}:f
+
+.DotEnv._get_stream()=try(open(p,e),e:v?print("File not found: "+p):none)

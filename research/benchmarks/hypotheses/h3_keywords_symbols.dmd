@@ -1,0 +1,1 @@
+@c(n:I)->S{?n==0{>"zero"}!{>"nonzero"}}

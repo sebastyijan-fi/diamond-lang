@@ -1,0 +1,13 @@
+storage_empty()>O={}
+storage_put(st:O,k:S,v:S)>O=st{k:v}
+storage_delk(st:O,k:S)>O=del(st,k)
+storage_getk(st:O,k:S)>S=get(st,k,"")
+
+serializer_pack(st:O)>S=S(st)
+serializer_unpack(raw:S)>O=O(raw)
+serializer_key(k:S)>S="k:"+k
+
+api_set(st:O,k:S,v:S)>O=storage_put(st,serializer_key(k),v)
+api_drop(st:O,k:S)>O=storage_delk(st,serializer_key(k))
+api_fetch(st:O,k:S)>S=storage_getk(st,serializer_key(k))
+api_round(st:O)>O=serializer_unpack(serializer_pack(st))
