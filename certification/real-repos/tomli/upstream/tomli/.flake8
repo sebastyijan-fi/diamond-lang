@@ -1,0 +1,8 @@
+[flake8]
+max-line-length = 88
+extend-ignore =
+    # E203: Whitespace before ':' (violates PEP8 and black style)
+    E203,
+    # B042: Requires calling super().__init__ in custom exceptions
+    B042,
+extend-exclude = */site-packages/*

@@ -1,0 +1,60 @@
+repos:
+- repo: https://github.com/Lucas-C/pre-commit-hooks
+  rev: ad1b27d73581aa16cca06fc4a0761fc563ffe8e8  # frozen: v1.5.6
+  hooks:
+  - id: insert-license
+    files: '^src/.+\.py$|^tests/.+\.py$'
+    args: ['--license-filepath', 'LICENSE-HEADER']
+- repo: https://github.com/executablebooks/mdformat
+  rev: 2d496dbc18e31b83a1596685347ffe0b6041daf0  # frozen: 1.0.0
+  hooks:
+  - id: mdformat
+    additional_dependencies:
+    - mdformat-toc
+    - mdformat-gfm
+    - mdformat-black
+- repo: https://github.com/asottile/yesqa
+  rev: f2ae90cf9e1661ade79d0881186ce4fd7ba6ee79  # frozen: v1.5.0
+  hooks:
+  - id: yesqa
+    additional_dependencies:
+    - flake8-bugbear
+    - flake8-builtins
+    - flake8-comprehensions
+- repo: https://github.com/MarcoGorelli/absolufy-imports
+  rev: 1683a63d850e065495c05b771e4a20db010a58e7  # frozen: v0.3.1
+  hooks:
+  - id: absolufy-imports
+    files: '^src/.+\.py$'
+    args: ['--never', '--application-directories', 'src']
+- repo: https://github.com/PyCQA/isort
+  rev: 3459bdee0962449aad91235273c3fd1306dfebe5  # frozen: 8.0.0
+  hooks:
+  - id: isort
+- repo: https://github.com/psf/black-pre-commit-mirror
+  rev: ea488cebbfd88a5f50b8bd95d5c829d0bb76feb8  # frozen: 26.1.0
+  hooks:
+  - id: black
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: 3e8a8703264a2f4a69428a0aa4dcb512790b2c8c  # frozen: v6.0.0
+  hooks:
+  - id: check-yaml
+- repo: https://github.com/pre-commit/pygrep-hooks
+  rev: 3a6eb0fadf60b3cccfd80bad9dbb6fae7e47b316  # frozen: v1.10.0
+  hooks:
+  - id: python-use-type-annotations
+  - id: python-check-blanket-noqa
+  - id: python-check-blanket-type-ignore
+- repo: https://github.com/PyCQA/flake8
+  rev: d93590f5be797aabb60e3b09f2f52dddb02f349f  # frozen: 7.3.0
+  hooks:
+  - id: flake8
+    additional_dependencies:
+    - flake8-bugbear
+    - flake8-builtins
+    - flake8-comprehensions
+- repo: https://github.com/pre-commit/mirrors-mypy
+  rev: a66e98df7b4aeeb3724184b332785976d062b92e  # frozen: v1.19.1
+  hooks:
+  - id: mypy
+    args: ["--scripts-are-modules"]
