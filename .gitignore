@@ -32,3 +32,5 @@ node_modules/
 .tox/
 .cache/
 .ipynb_checkpoints/
+logs/
+log/
